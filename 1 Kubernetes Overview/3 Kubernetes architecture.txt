@@ -1,0 +1,49 @@
+Kubernetes Architecture:
+========================
+
+* Node:
+
+	* Machine (Physical or Virtual) where Kubernetes is installed.
+	
+Cluster:
+=========
+
+	* collection of nodes grouped together
+	
+Master:
+========
+
+	* Manages the Cluster
+	* Node with kubernetes installed in it.
+	
+
+Components:
+============
+
+	* API Server - Frontend for Kubernetes
+	* etcd - K:V store
+	* kubelet - agent that runs in each node in the cluster
+	* Container Runtime - underlying software to run container
+	* Controller - Brain behind Orchestration
+	* Scheduler - distrbuting work across multiple nodes
+	
+Master vs Worker Nodes:
+========================
+
+* Worker - Containers are hosted (Node or Minion)
+* API Server - Kubelet
+* data is stored in etcd K:V store in master
+
+
+
+Kubectl:
+========
+
+kubectl run hello-minikube
+
+kubectl cluster-info
+
+kubectl get nodes
+
+	
+	
