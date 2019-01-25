@@ -1,0 +1,25 @@
+Container Overview:
+===================
+
+Kubernetes or K8s:
+-------------------
+
+	* Developed by Google
+	* Container Orchestration
+	
+
+Container:
+==========
+
+* Docker
+* Completely isolated Environments
+* Own process or services 
+* Share the same OS Kernel
+* Docker uses LXC containers
+
+Sharing the Kernel:
+====================
+
+* We cannot run a windows based OS on top of a Linux OS
+
+
