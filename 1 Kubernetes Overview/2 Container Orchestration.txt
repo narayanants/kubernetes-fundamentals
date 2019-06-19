@@ -2,5 +2,5 @@ Container Orchestration:
 ========================
 
 * Scaling Docker 
-* Automatically deploying and managing container is called Docker Orchestration
+* Automatically deploying and managing containers is called Docker Orchestration
 
