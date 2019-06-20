@@ -1,0 +1,13 @@
+Demo Minikube:
+==============
+
+* Enable Virtualization
+* kubectl
+* Minikube
+
+
+kubectl get nodes
+kubectl get pods
+kubectl run hello-minikube
+
+
