@@ -6,4 +6,7 @@ Kubeadm Setup Part 2:
     - Calico or Flannel
 
     Kubeadm init --pod-network-cidr= 10.244.0.0/16 --apiserver-advertise-address= 192.168.56.2
-    
+
+    kubectl get nodes
+    kubectl run nginx --image=nginx
+    kubectl delete nodes
