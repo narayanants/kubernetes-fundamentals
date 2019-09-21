@@ -1,0 +1,18 @@
+Kubeadm Setup:
+==============
+
+    - Setup VM's
+    - Setup Kubernetes with Kubeadm
+
+
+    ifconfig
+    service ssh status
+
+    vi /etc/hostname => kubemaster
+    vi /etc/hosts => kubemaster
+    shutdown
+
+    vi /etc/network/interfaces
+    
+
+
