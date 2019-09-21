@@ -1,0 +1,14 @@
+Kubeadm setup:
+==============
+
+    - Kubeadm - 
+
+    
+    1 master    other workers
+
+    Install Docker
+    Install Kubeadm
+    Initialize Master
+    POD Network
+    Join worker nodes to master node
+    
