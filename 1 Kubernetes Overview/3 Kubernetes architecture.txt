@@ -25,7 +25,8 @@ Components:
 
 	* API Server - Frontend for Kubernetes
 	* etcd - K:V store
-	* kubelet - agent that runs in each node in the cluster. Responsible for containers are running on the server as expected.
+	* kubelet - agent that runs in each node in the cluster. 
+				Responsible for containers are running on the server as expected.
 	* Container Runtime - underlying software to run container
 	* Controller - Brain behind Orchestration
 	* Scheduler - distrbuting work across multiple nodes
