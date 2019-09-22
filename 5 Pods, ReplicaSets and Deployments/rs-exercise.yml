@@ -18,4 +18,4 @@ spec:
           image: nginx
   selector:
     matchLabels:
-      app: myapp
+      app: myapp     
