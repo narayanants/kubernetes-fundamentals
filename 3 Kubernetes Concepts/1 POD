@@ -1,0 +1,23 @@
+POD:
+====
+
+    * Basic execution unit in Kubernetes
+    * Pods represents processes running on your cluster
+    * Single instance of your application
+    * Single Container per POD
+    * Each POD has it own unique IP
+    * Containers inside the POD communicate via the POD IP in a Localhost connection
+
+
+    How to deploy PODS:
+    ===================
+
+        - Deploys a docker Container by creating a POD
+
+
+        kubectl run nginx --image nginx
+        kubectl get pods (ContainerCreating => Running)
+        kubectl describe pods
+        kubectl get pods -o wide
+
+
