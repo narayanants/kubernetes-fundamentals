@@ -8,7 +8,7 @@ metadata:
 spec:
   - template:
         metadata:
-            name: myapp-replicationcontroller
+            name: myapp-pod
             labels:
                 app: myapp
                 type: frontend
