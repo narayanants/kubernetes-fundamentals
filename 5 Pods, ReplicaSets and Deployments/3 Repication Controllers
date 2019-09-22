@@ -2,6 +2,8 @@ Replication Controller:
 =======================
 
     - Specified number of pods are running all time
+
+    - kubectl get replicationcontroller
     - 
 
     ReplicationController               ReplicaSets
