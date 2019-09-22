@@ -1,0 +1,29 @@
+Deployment updates and Rollback:
+================================
+
+    - New Deployment creates a new Rollout
+    - New Rollout creates a new Revision
+
+
+    Deployment Stratesgies:
+    =======================
+
+    - Recreate - All Down and All Up
+    - Rolling Update - one by one Down and up
+
+
+    kubectl apply -f deploy-def.yml
+    
+
+
+    kubectl create -f deploy-def.yml --record
+    kubectl rollout status deployment/myapp-deployment
+    kubectl rollout history deployment/myapp-deployment
+    kubectl delete deployment myapp-deployment
+    kubectl get all
+    kubectl apply -f deploy-def.yml
+    kubectl get deployment
+    kubectl get pods
+    kubectl describe deployment
+    kubectl rollout undo deployment/myapp-deployment
+
