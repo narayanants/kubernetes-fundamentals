@@ -1,0 +1,48 @@
+K8s Commands:
+==============
+
+    kubectl create -f demo.yaml
+    kubectl get pods <pod-name>
+    kubectl describe nodes <node-name> - describe detailed info about the resource
+    kubectl describe pod <pod-name>
+    kubectl delete -f pod.yaml  - Delete Resource
+    kubectl delete pods --all
+    kubectl exec <pod-name> date
+    kubectl exec <pod-name> -c <container-name> date
+    kubectl exec -it <pod-name> /bin/bash
+    kubectl logs <pod-name>
+
+
+  Kubeadm commands:
+  ==================
+
+    kubeadm init - kubeadm init [flags]  * Initialize Master Node (On Master)
+    kubeadm join - kubeadm join --token [] * Initialize Worker Node (On Worker)        
+    kubeadm token - kubeadm token [create|delete|list|generate]
+    kubeadm version - kubeadm version [flags]
+    kubeadm upgrade - kubeadm upgrade plan [version] [flags]
+
+    Pod Manifest file
+    ==================
+
+        kubectl create -f pod.yml
+        kubectl get pod
+        kubectl get pod -o wide
+        kubectl get pod nginx-pod -o yml
+        kubectl describe pod nginx-pod
+        kubectl exec -it nginx-pod /bin/sh
+        kubectl delete pod nginx-pod
+
+     ReplicaSets and Deployments:
+     ----------------------------
+
+     	kubectl create -f deploy-def.yml
+     	kubectl get pods
+     	kubectl get pod -o wide
+     	kubectl describe pods
+     	kubectl get replicationcontroller
+     	kubectl get replicaset
+     	kubectl get deployments
+     	kubectl replace -f rs-def.yml
+     	kubectl scale --replicas=6 -f rs-def.yml
+     	kubectl delete replicaset <rs-name>
