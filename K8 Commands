@@ -26,9 +26,8 @@ K8s Commands:
     ==================
 
         kubectl create -f pod.yml
-        kubectl get pod
+        kubectl get pods
         kubectl get pod -o wide
-        kubectl get pod nginx-pod -o yml
         kubectl describe pod nginx-pod
         kubectl exec -it nginx-pod /bin/sh
         kubectl delete pod nginx-pod
@@ -45,4 +44,31 @@ K8s Commands:
      	kubectl get deployments
      	kubectl replace -f rs-def.yml
      	kubectl scale --replicas=6 -f rs-def.yml
+        kubectl rollout status deployment/myapp-deployment
+        kubectl rollout history deployment/myapp-deployment
+        kubectl rollout undo deployment/myapp-deployment
+        kubectl apply -f deploy-def.yml
+        kubectl run nginx --image=nginx
      	kubectl delete replicaset <rs-name>
+
+     Updates and Rollback:
+     =====================
+
+     create -   kubectl create -f deploy-def.yml
+     get   -    kubectl get deployments
+     update -   kubectl apply -f deploy-def.yml
+     status -   kubectl set image deployment/myapp-deployment nginx=nginx:1.9.1
+     Rollout-   kubectl rollout status deployment/myapp-deployment
+                kubectl rollout history deployment/myapp-deployment
+                kubectl rollout undo deployment/myapp-deployment
+    delete -    kubectl delete deployment myapp-deployment
+
+
+    Services:
+    =========
+
+        kubectl create -f service-def.yml
+        kubectl get services
+
+
+
