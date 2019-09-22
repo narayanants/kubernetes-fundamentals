@@ -1,0 +1,24 @@
+Pods with YAML:
+===============
+
+    pod-definition.yml
+    --------------------
+
+
+    apiVersion:v1
+    kind: Pod
+    metadata:
+        name: myapp-pod
+        labels:
+            app:myapp
+            type:frontend
+    spec:
+        containers:
+            - name: nginx
+              image: nginx
+
+
+    kubectl create -f pod-definition.yml
+    kubectl get pods
+    kubectl describe pods
+    
