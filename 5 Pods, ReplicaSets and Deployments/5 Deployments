@@ -1,0 +1,10 @@
+Deployments:
+============
+
+kubectl create -f deploy-def.yml
+kubectl get deployments
+kubectl get replicasets
+kubectl get pods
+kubectl get all
+kubectl describe deployment
+
