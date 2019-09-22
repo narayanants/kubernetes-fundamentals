@@ -1,0 +1,40 @@
+Replication Controller:
+=======================
+
+    - Specified number of pods are running all time
+    - 
+
+    ReplicationController               ReplicaSets
+
+    rc-definition.yml
+    -----------------
+
+        apiVersion:v1
+        kind: ReplicationController
+        metadata:
+            name: myapp-rc
+            labels:
+                app: myapp
+                type: frontend
+            spec:
+              - template:
+                    apiVersion:v1
+        kind: ReplicationController
+        metadata:
+            name: myapp-rc
+            labels:
+                app: myapp
+                type: frontend
+            spec:
+              - template:
+                    metadata:
+                        name: postgres
+                        labels:
+                            tier: db-tier
+                    spec:
+                        containers:
+                            - name: postgres
+                              image: postgres
+                              env:
+                                - name: POSTGRES_PASSWORD
+                                  value: mysecretpassword
