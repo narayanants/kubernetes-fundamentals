@@ -1,0 +1,100 @@
+K8s Concepts:
+=============
+
+Node:
+=====
+
+    - Worker machine in K8s know as Minion
+    - Physical or VM depending on the cluster
+    - Contains necessary components to run PODS and is managed by master components
+    - Services in Node include 
+
+        - Container Runtime
+        - kubelet
+        - kubeproxy
+
+Controller:
+============
+
+    - Master component
+    - Manages various aspects of nodes
+    - Monitors Node health
+    - Create and manage multiple PODS for you
+    - Roles
+
+        - Assigns CIDR block addresses to nodes when registered
+        - NodeReady => ConditionUnknown when a node becomes unreachable
+        - NodeStatus => Heart beat of the node
+
+    Self Registration of nodes:
+    ===========================
+
+        --register-node , kubelet will attempt to register itself with the API Server
+        --kubeconfig
+
+
+Master Node Communication:
+==========================
+
+        - Comms between cluster to master terminate at the API Server
+        - Master components communicate with the cluster apiserver over secure port
+        
+
+        Master to Cluster:
+        ===================
+
+            API Server => kubelet
+            API Server => Node,POD or Service through API server's proxy functionality
+
+
+POD:
+=====
+
+    - Simplest unit of execution 
+    - Group of one or more containers with shared storage/Network and a spec to run the containers.
+    - Application contianers that are tightly coupled
+    - Docker is most common container runtime used in a K8s POD
+    - Types of PODS
+        - PODS with single containers
+        - PODS with multiple Containers
+    - Each POD is meant to run a single instance of the given application
+    - Scale Horizontally => Use multiple PODS
+    - Replication is done by the Controller
+    - Two kinds of shared resources
+        - Networking - Unique IP Address per POD
+        - Storage 
+            * Shared Storage volumes
+            * Containers in the POD can access the shared volumes allowing them to share data
+    - Pods don't self heal
+    - Manage PODS using the Controller
+
+POD Templates:
+==============
+
+    - POD specifications
+    - Controllers use POD spec to create PODS
+
+
+    apiVersion:v1
+    kind:Pod
+    metadata:
+        name:my-app
+        labels:
+            app:myapp
+    spec:
+        containers:
+        -   name: myapp-Controller
+            image:BusyBox
+            command: ['sh', '-c', 'echo Hello Kubernetes! && sleep 3600']
+
+POD Lifecycle:
+===============
+
+    Pending => Running <=> Failed <=> Succeeded <=> Unknown
+            
+
+
+
+
+
+
