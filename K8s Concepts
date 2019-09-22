@@ -20,14 +20,9 @@ Controller:
     - Manages various aspects of nodes
     - Monitors Node health
     - Create and manage multiple PODS for you
-    - Roles
-
-        - Assigns CIDR block addresses to nodes when registered
-        - NodeReady => ConditionUnknown when a node becomes unreachable
-        - NodeStatus => Heart beat of the node
 
     Self Registration of nodes:
-    ===========================
+    ---------------------------
 
         --register-node , kubelet will attempt to register itself with the API Server
         --kubeconfig
