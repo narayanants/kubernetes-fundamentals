@@ -1,0 +1,18 @@
+Services Nodeport:
+==================
+
+    - communicate between various components of the application
+    - Nodeport
+    - ClusterIP
+    - LoadBalancer
+
+
+    Nodeport:
+    =========
+
+        - Port on the node to port on the POD
+        - Range 30000 - 32767
+          POD IP:PORT => ClusterIP:PORT => NodeIP:PORT
+
+    
+    
