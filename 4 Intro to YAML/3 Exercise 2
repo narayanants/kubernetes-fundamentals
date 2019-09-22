@@ -1,0 +1,11 @@
+Update the food.yaml file to add a Vegetable-Carrot, Tomato, Cucumber
+
+
+Fruits:
+  - Apple
+  - Banana
+  - Orange
+Vegetables:
+  - Carrot
+  - Tomato
+  - Cucumber
