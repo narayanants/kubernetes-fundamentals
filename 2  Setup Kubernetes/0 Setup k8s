@@ -1,0 +1,9 @@
+Setup K8s:
+==========
+
+    We can setup K8s in 3 ways
+
+        - Play-with-K8s
+        - Minikube
+        - Kubeadm
+        
