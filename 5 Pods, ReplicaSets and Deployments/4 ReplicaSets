@@ -1,0 +1,15 @@
+ReplicaSet:
+===========
+
+    ReplicaSet requires Set based Selector definitions
+
+
+How do we Scale ReplicaSet?
+---------------------------
+
+    
+    kubectl create -f rs-definition.yml
+    kubectl get replicaset
+    kubectl replace -f rs-definition.yml
+    kubectl scale --replicas=6 replicaset rs-definition.yml
+    kubectl delete replicaset <rs-name>
