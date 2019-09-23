@@ -20,15 +20,6 @@ Replication Controller:
                 type: frontend
             spec:
               - template:
-                    apiVersion:v1
-        kind: ReplicationController
-        metadata:
-            name: myapp-rc
-            labels:
-                app: myapp
-                type: frontend
-            spec:
-              - template:
                     metadata:
                         name: postgres
                         labels:
