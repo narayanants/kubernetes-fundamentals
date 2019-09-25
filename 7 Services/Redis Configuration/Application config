@@ -1,0 +1,8 @@
+Application Config:
+===================
+
+kubectl get pods -l tier=backend
+kubectl get pods -l tier=frontend
+kubectl get service tier=backend
+kubectl get service tier=frontend
+kubectl get nodes -o wide
