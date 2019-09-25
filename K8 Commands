@@ -39,17 +39,16 @@ K8s Commands:
      	kubectl get pods
      	kubectl get pod -o wide
      	kubectl describe pods
-     	kubectl get replicationcontroller
-     	kubectl get replicaset
+     	kubectl get rs
      	kubectl get deployments
      	kubectl replace -f rs-def.yml
      	kubectl scale --replicas=6 -f rs-def.yml
-        kubectl rollout status deployment/myapp-deployment
-        kubectl rollout history deployment/myapp-deployment
-        kubectl rollout undo deployment/myapp-deployment
-        kubectl apply -f deploy-def.yml
-        kubectl run nginx --image=nginx
-     	kubectl delete replicaset <rs-name>
+      kubectl rollout status deployment/myapp-deployment
+      kubectl rollout history deployment/myapp-deployment
+      kubectl rollout undo deployment/myapp-deployment
+      kubectl apply -f deploy-def.yml
+      kubectl run nginx --image=nginx
+     	kubectl delete rs <rs-name>
 
      Updates and Rollback:
      =====================
