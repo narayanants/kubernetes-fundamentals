@@ -22,5 +22,6 @@ spec:
   replicas: 6
   selector:
     withLabels:
-      type: frontend
+       app: myapp
+       type: frontend
 
