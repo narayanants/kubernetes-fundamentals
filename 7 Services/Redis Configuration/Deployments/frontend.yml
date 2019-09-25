@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+  labels:
+    app: guestbook
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: guestbook
+        tier: frontend
+    spec:
+      containers:
+        - name: php-redis
+          image: php-redis
+          resources:
+            requests:
+              cpu: 100m
+              memory: 100Mi
+          ports:
+            - containerPort: 80
+  selector:
+    withLabels:
+      app: guestbook
+      tier: frontend
