@@ -28,3 +28,4 @@ NodePort:
     - kubectl create -f nginx-service.yml
     - kubectl get service -f app=nginx-app
     - kubectl get po -o wide
+    - kubectl delete service <service-name>
