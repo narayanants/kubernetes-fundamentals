@@ -1,0 +1,30 @@
+NodePort:
+=========
+
+    - Why we need?
+
+
+    NodePort range : 30000 - 32767
+    If no port is specified, K8s will assign unused port automatically
+
+    - NodePort
+    - Port
+    - TargetPort
+
+
+
+    Downsides:
+    ==========
+
+    - One service per port
+    - You can use only port between 30000- 32767
+    - If your node IP changes, you need to deal with that
+
+
+   commands:
+   =========
+
+    - kubectl create -f nginx-deploy.yml
+    - kubectl create -f nginx-service.yml
+    - kubectl get service -f app=nginx-app
+    - kubectl get po -o wide
