@@ -1,10 +1,37 @@
 Deployments:
 ============
 
+    - Updates & Rollbacks
+    - Increasing and decreasing POD Replicas
+
+Features:
+=========
+
+    - Multiple Replicas
+    - Upgrade
+    - Rollbacks
+    - Scale up and Scale Down
+    - Pause and Resume
+
+Deployment Strategies:
+======================
+
+    - Recreate - Delete all and Deploy All
+    - RollingUpdate (Incremental) - One by one
+
+
+Commands:
+=========
+
 kubectl create -f deploy-def.yml
-kubectl get deployments
-kubectl get replicasets
+kubectl get deploy -l app=myapp
+kubectl get rs
 kubectl get pods
 kubectl get all
 kubectl describe deployment
+kubectl rollout status deployment/myapp-deployment
+kubectl rollout history deployment/myapp-deployment
+kubectl rollout undo deployment/myapp-deployment
+
+
 
