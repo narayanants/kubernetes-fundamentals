@@ -1,0 +1,30 @@
+Services Nodeport:
+==================
+
+  Concept:
+  --------
+
+    - Why we need Services
+    - What is a Service
+    - Types of Services
+
+    - How do various components connect and communicate?
+    - How are application exposed to the outside world?
+
+    - Service is a way of grouping of pods that are running in a cluster
+    - Loose Coupling between Microservices
+    - Labels and Selectors
+
+
+  
+  
+    - communicate between various components of the application
+    
+    Types of Services:
+    ------------------   
+    
+    - Nodeport - Expose webapp to the outside world
+    - ClusterIP - Confined within the cluster
+    - LoadBalancer - To distribute traffic across nodes
+ 
+    
