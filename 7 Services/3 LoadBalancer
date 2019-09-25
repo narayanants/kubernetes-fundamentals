@@ -1,0 +1,25 @@
+Load Balancer:
+==============
+
+    - Why we need?
+    - LoadBalancer Overview
+
+Review Demo:
+=============
+
+    - Manifest File
+    - Create and Display
+    - Test Usecase
+    - Clean up
+
+Commands:
+=========
+
+    - kubectl create -f nginx-deploy.yml
+    - kubectl create -f nginx-service.yml
+    - kubectl get pods -o wide
+    - kubectl get service -l app=nginx-app
+    - kubectl describe service myapp-service
+    - kubectl delete service my-service
+    - kubectl get pods
+    
