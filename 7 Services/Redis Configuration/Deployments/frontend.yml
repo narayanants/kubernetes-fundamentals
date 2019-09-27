@@ -24,4 +24,4 @@ spec:
   selector:
     withLabels:
       app: guestbook
-      tier: frontend
+      tier: frontend      
