@@ -86,7 +86,70 @@ POD Lifecycle:
 ===============
 
     Pending => Running <=> Failed <=> Succeeded <=> Unknown
+
+
+
+  Scheduler:
+  ==========
+
+    - Scheduler decides which pod goes on which node
+    - Doesn't place the pod itself
+    - kubelet does the placing of the pod in node
+    - Scheduler does the matching with the best resources in the node
+    - Rank Nodes
+    - Free Resources once we place the POD
+
+  ETCD:
+  =====
+
+  	- Distributed K:V store
+  	- ETCD stores info about
+  	- Listens in port 2379
+
+    - Nodes
+    - PODS
+    - Configs
+    - Secrets
+    - Accounts
+    - Roles
+    - Bindings
+
+ API Server:
+ ===========
+
+ 	- Scheduler continuously monitors the API server with pod with no node assigned
+    - Scheduler identifies the right node to place the POD
+
+    - Authenticate User
+    - Validate Request
+    - Retrieve data
+    - Update ETCD
+    - Scheduler
+    - Kubelet
+
+Kubelet:
+=========
+
+Register the node in the K8s cluster
+Create PODS
+Monitors Nodes and PODS
+Kubeadm doesn't deploy Kubelet
+
+
+ps -aux | grep Kubelet
             
+
+Kube Proxy:
+===========
+
+    - POD Network is the internal network connecting all nodes in the cluster
+    - internal comms is done using a Service
+    - Communication between various services in the cluster
+
+
+    - Kube-proxy runs on each node
+    - Look for new Services and direct traffic from the POD through that Service
+    - IP Table rules
 
 
 
