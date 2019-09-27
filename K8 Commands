@@ -69,5 +69,10 @@ K8s Commands:
         kubectl create -f service-def.yml
         kubectl get services
 
+    Labels & Selectors:
+    ===================
+
+    	- kubectl label node node1 size=Large
+
 
 
