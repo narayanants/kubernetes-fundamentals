@@ -1,0 +1,11 @@
+Kubelet:
+=========
+
+    - Register Nodes
+    - Create PODS
+    - Monitors Nodes and PODS
+    - Kubeadm doesn't deploy Kubelet
+    - Manually install kubelet in worker Nodes
+
+
+    ps -aux | grep kubelet
