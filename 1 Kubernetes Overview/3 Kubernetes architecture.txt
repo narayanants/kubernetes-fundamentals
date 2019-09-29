@@ -1,6 +1,7 @@
 Kubernetes Architecture:
 ========================
 
+
 * Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications. It was originally designed by Google and is now maintained by the Cloud Native Computing Foundation.
 
 * Node:
@@ -24,7 +25,7 @@ Components:
 ============
 
 	* API Server - Frontend for Kubernetes
-	* etcd - K:V store
+	* etcd - Key:Value store
 	* kubelet - agent that runs in each node in the cluster. 
 				Responsible for containers are running on the server as expected.
 	* Container Runtime - underlying software to run container
