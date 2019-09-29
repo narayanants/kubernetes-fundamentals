@@ -1,0 +1,27 @@
+ETCD Beginners:
+===============
+
+    - What is an ETCD
+    - What is a K:V store
+    - How to get started quickly
+    - How to operate ETCD?
+
+    Later:
+
+        What is a Distributed system
+        How ETCD operates
+        RAFT Protocol
+        Best practices on the number of nodes
+
+
+    Distributed K:V store
+
+    Download
+    Extract
+    Run
+
+    Etcd port  2379
+
+    etcdctl set k1 v1
+    etcdctl get k1
+    etcdctl
