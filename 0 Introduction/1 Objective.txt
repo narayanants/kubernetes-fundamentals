@@ -1,12 +1,20 @@
+
+Prerequisites:
+==============
+
+	- Docker
+	- Microservices Architecture
+	- Container orchestration
+
 Objectives:
 ============
 
-Kubernetes Overview
-Containers - Docker
-Container Orchestration
-Demo- Kubernetes Setup
-Kubernetes Concepts
-Networking in Kubernetes
-Kubernetes Management - Kubectl
-Kubernetes Definition Files - YAML
-Kubernetes on Cloud - AWS/GCP
+	Kubernetes Overview
+	Containers - Docker
+	Container Orchestration
+	Demo- Kubernetes Setup
+	Kubernetes Concepts
+	Networking in Kubernetes
+	Kubernetes Management - Kubectl
+	Kubernetes Definition Files - YAML
+	Kubernetes on Cloud - AWS/GCP
