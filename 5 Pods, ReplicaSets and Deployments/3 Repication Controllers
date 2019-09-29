@@ -3,31 +3,9 @@ Replication Controller:
 
     - Specified number of pods are running all time
 
-    - kubectl get replicationcontroller
+    - kubectl get rc
     - 
 
-    ReplicationController               ReplicaSets
+    ReplicationController                                    ReplicaSets
 
-    rc-definition.yml
-    -----------------
-
-        apiVersion:v1
-        kind: ReplicationController
-        metadata:
-            name: myapp-rc
-            labels:
-                app: myapp
-                type: frontend
-            spec:
-              - template:
-                    metadata:
-                        name: postgres
-                        labels:
-                            tier: db-tier
-                    spec:
-                        containers:
-                            - name: postgres
-                              image: postgres
-                              env:
-                                - name: POSTGRES_PASSWORD
-                                  value: mysecretpassword
+    doesn't have selector field                         has selector field in it
