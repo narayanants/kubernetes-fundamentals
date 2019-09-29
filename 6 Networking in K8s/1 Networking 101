@@ -3,3 +3,9 @@ Networking 101:
 
     Single Node K8s cluster
     - IP address is assigned to a POD
+
+   	Recommended practice:
+   	=====================
+
+   		- One container per POD
+   	
