@@ -1,0 +1,24 @@
+Cluster Architecture:
+=====================
+
+- K8s Architecture
+- ETCD for beginners
+- ETCD in K8s
+- Kube API Server
+- Control Managers
+- Kube Scheduler
+- Kubelet
+- Kube Proxy
+
+
+- Cluster info is stored in ETCD (K:V)
+- Scheduler identifies the right container to place on the workers nodes
+- Controllers take care of the overall health of the Cluster
+
+    - Node Controller
+    - Replication Controller
+
+
+- Kube API is the primary communication components of the K8s Cluster
+- Kubelet is an agent that runs on each nodes of the Cluster
+- Kube-proxy takes care of the internal communication in the worker nodes
