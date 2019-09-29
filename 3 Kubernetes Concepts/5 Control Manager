@@ -1,0 +1,22 @@
+Control Manager
+===============
+
+    - Controller continuously manages the status of various components of the system
+
+    Node Controller - Status of the Nodes
+    -------------------------------------
+    
+        Watch Status
+        Remediate Situation
+        Node Monitor Period = 5s 
+        Node Montior Grace Period = 40s
+        After that node is marked unreachable
+        POD Eviction Timeout - 5mins
+
+
+
+    Replication Controller:
+    -----------------------
+
+        - Ensures the numbers of replicasets are maintained in each node
+        
