@@ -1,5 +1,12 @@
 Deployments:
 ============
+	
+Concepts:
+=========
+
+	- Deployments and Services make the most of the POD spec configuration
+	- From now on, no need to remember ReplicationController and ReplicaSets
+
 
     - Updates & Rollbacks
     - Increasing and decreasing POD Replicas
@@ -16,7 +23,7 @@ Features:
 Deployment Strategies:
 ======================
 
-    - Recreate - Delete all and Deploy All
+    - Recreate - Delete and Deploy All
     - RollingUpdate (Incremental) - One by one
 
 
