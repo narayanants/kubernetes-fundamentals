@@ -43,12 +43,12 @@ K8s Commands:
      	kubectl get deployments
      	kubectl replace -f rs-def.yml
      	kubectl scale --replicas=6 -f rs-def.yml
-      kubectl rollout status deployment/myapp-deployment
-      kubectl rollout history deployment/myapp-deployment
-      kubectl rollout undo deployment/myapp-deployment
-      kubectl apply -f deploy-def.yml
-      kubectl run nginx --image=nginx
-     	kubectl delete rs <rs-name>
+        kubectl rollout status deployment/myapp-deployment
+        kubectl rollout history deployment/myapp-deployment
+        kubectl rollout undo deployment/myapp-deployment
+        kubectl apply -f deploy-def.yml
+        kubectl run nginx --image=nginx
+        kubectl delete rs <rs-name>
 
      Updates and Rollback:
      =====================
@@ -68,6 +68,7 @@ K8s Commands:
 
         kubectl create -f service-def.yml
         kubectl get services
+        kubectl delete service <service-name>
 
     Labels & Selectors:
     ===================
