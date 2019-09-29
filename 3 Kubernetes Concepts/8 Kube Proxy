@@ -1,0 +1,12 @@
+Kube Proxy:
+===========
+
+    - POD Network is the internal network connecting all nodes in the cluster
+    - internal comms is done using a Service
+    - Communication between various services in the cluster
+
+
+    - Kube-proxy runs on each node
+    - Look for new Services and direct traffic from the POD through that Service
+    - IP Table rules
+
