@@ -6,6 +6,7 @@ metadata:
     name: myapp
     type: frontend
 spec:
+  replicas: 6
   template:
     metadata:
       name: myapp-pod
@@ -14,12 +15,11 @@ spec:
         type: frontend
     spec:
       containers:
-        name: postgres
-        image: postgres
-        env:
-          name: POSTGRES_PASSWORD
-          value: mysecretpassword
-  replicas: 6
+        - name: postgres
+          image: postgres
+          env:
+            name: POSTGRES_PASSWORD
+            value: mysecretpassword
   selector:
     withLabels:
        app: myapp
