@@ -1,7 +1,7 @@
 ReplicaSet:
 ===========
 
-    ReplicaSet requires Set based Selector definitions
+    ReplicaSet requires set based Selector definitions
 
 
 How do we Scale ReplicaSet?
