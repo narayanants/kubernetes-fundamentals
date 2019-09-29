@@ -1,0 +1,16 @@
+Kube API Server
+===============
+
+    - Scheduler continuously monitors the API server with pod with no node assigned
+    - Scheduler identifies the right node to place the POD
+
+    - Authenticate User
+    - Validate Request
+    - Retrieve data
+    - Update ETCD
+    - Scheduler
+    - Kubelet
+
+
+    ps -aux | grep kube-apiserver
+    
