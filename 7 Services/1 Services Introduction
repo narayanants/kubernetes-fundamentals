@@ -15,16 +15,13 @@ Services Nodeport:
     - Loose Coupling between Microservices
     - Labels and Selectors
 
-
-  
-  
     - communicate between various components of the application
     
     Types of Services:
     ------------------   
     
     - Nodeport - Expose webapp to the outside world
-    - ClusterIP - Confined within the cluster
+    - ClusterIP - connect components within the worker node
     - LoadBalancer - To distribute traffic across nodes
  
     
