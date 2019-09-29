@@ -1,0 +1,12 @@
+Scheduler:
+==========
+
+    - Scheduler decides which pod goes on which node
+    - Doesn't place the pod itself
+    - kubelet does the placing of the pod in node
+    - Scheduler does the matching with the best resources in the node
+    - Rank Nodes
+    - Free Resources once we place the POD
+
+
+    ps -aux | grep kube-scheduler
