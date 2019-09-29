@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: image-processing-deployment
+  labels:
+    tier: backend
+spec:
+  replicas: 4
+  template:
+    metadata:
+      name: image-processing-pod
+      labels:
+        tier: backend
+    spec:
+      containers:
+        - name: mycustom-image-processing
+          image: someorg/mycustom-image-processing
+  selector:
+    matchLabels:
+      tier: backend
